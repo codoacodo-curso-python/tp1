@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peliculas</title>
-</head>
-<body>
 
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+      }
+      footer{
+        width: 100%;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: #08090a;
+        padding: 10px;
+      }
 
-</body>
+      .container > div {
+        background-color: rgba(119, 103, 103, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      main{
+        background-color: grey;
+      }
+      h1{
+        text-align: center;
+        color:rgb(59, 8, 8);
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <iframe src="header.html" style="width: 100%;"> </iframe>
+    </header>
+    <main>
+      <h1>CRÍTICAS DE PELÍCULAS</h1>
+      <div class="container">
+        <div class="item1"><img src="img/angry.jpg" /></div>
+        <div class="item2"><img src="img/Batman.jpg" /></div>
+        <div class="item3"><img src="img/cruela.jpeg" /></div>
+        <div class="item4"><img src="img/Freddy_Cosplay.jpg" /></div>
+        <div class="item5"><img src="img/guardianes.jpg" /></div>
+        <div class="item6">
+          <img src="img/guardianes_de_la_galaxia-cartel-5615.jpg" />
+        </div>
+        <div class="item7"><img src="img/oppenheimer.jpg" /></div>
+        <div class="item8"><img src="img/pitufos.jpg" /></div>
+        <div class="item9"><img src="img/red.jpg" /></div>
+      </div>
+    </main>
+    <footer>
+      <iframe src="footer.html" style="width: 100%;"> </iframe>
+    </footer>
+  </body>
 </html>
