@@ -1,39 +1,49 @@
 footer{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(131, 24, 24);
-    padding: 10px;
-    position:fixed;
-    bottom: 0;
-    width:100%;
+    padding: 20px;
 }
 
-footer .fa:hover {
+footer .social {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 20px;
+}
+
+footer .social .fa {
+    font-size: 20px;
+    width: 20px;
+    text-decoration: none;
+    margin: 0;
+}
+
+footer .social .fa:hover {
     opacity: 0.6;
 }
 
-footer .fa-linkedin {
+footer .social .fa-linkedin {
     background: #007bb5;
     color: white;
 }
 
-footer .fa-pinterest {
+footer .social .fa-pinterest {
     background: #cb2027;
     color: white;
 }
 
-footer .fa-reddit {
+footer .social .fa-reddit {
     background: #ff5700;
     color: white;
 }
 
-footer .fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 60px;
-    text-decoration: none;
-    margin: 5px 80px;
+footer .copyright{
+    font-size: 13px;
+    align-self: flex-end;
 }
 
-footer h1 {
-    color: green;
+footer .credits{
+    font-size: 13px;
+    align-self: flex-end;
 }

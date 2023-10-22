@@ -1,15 +1,19 @@
 @import url("_common.css");
 
-.main{
+#seccion_contacto .main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
-.form-box{
+
+#seccion_contacto .container {
     position: relative;
-    width: 400px;
-    height: 550px;
+}
+
+#seccion_contacto .form-box{
+    position: relative;
+    width: 350px;
+    height: 500px;
     border: 2px solid rgba(255,0,0,0.5);
     border-radius: 20px;
     backdrop-filter: blur(15px);
@@ -17,19 +21,22 @@
     justify-content: center;
     align-items: center;
 }
-.form-box h2{
+
+#seccion_contacto .form-box h2{
     color: #ff0000;
     text-align: center;
     font-size: 32px;
 }
-.form-box .input-box{
+
+#seccion_contacto .form-box .input-box{
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #ff0000;
 }
-.form-box .input-box input,
-.form-box .input-box textarea{
+
+#seccion_contacto .form-box .input-box input,
+#seccion_contacto .form-box .input-box textarea{
     width: 90%;
     height: 45px;
     background: transparent;
@@ -40,20 +47,22 @@
     font-size: 16px;
 }
 
-.form-box .input-box textarea{
+#seccion_contacto .form-box .input-box textarea{
     height: 100px;
 }
 
-input::placeholder,
-textarea::placeholder{
+#seccion_contacto input::placeholder,
+#seccion_contacto textarea::placeholder{
     color: #ff0000;
     background: #000;
 
 }
-textarea{
+
+#seccion_contacto textarea{
     resize: none;
 }
-.btn{
+
+#seccion_contacto .btn{
     color: #fff;
     background-color: #ff0000;
     width: 100%;
@@ -64,14 +73,17 @@ textarea{
     font-size: 17px;
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(255,100,100,0.5);
+    text-align: center;
 }
-.bx{
+
+#seccion_contacto .bx{
     position: absolute;
     color: #ff0000;
     top: 13px;
     right: 0;
 }
-#result{
+
+#seccion_contacto #result{
     height: 24px;
     width: 100%;
     color: #ff0000;
@@ -80,26 +92,30 @@ textarea{
     top: 25px;
 }
 
-.popup{
-    width: 340px;
+#seccion_contacto .popup{
+    color: #fff;
     background-color: #000;
     border-radius: 6px;
-    position: absolute;
-    z-index: 2;
-    transition: opacity .2s;
-    visibility: hidden;
-    opacity: 0;
+    height: 1px;
+    width: 340px;
     text-align: center;
     padding: 0 30px 0;
-    height: 500px;
-    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s;
 }
-.popup ion-icon{
+
+#seccion_contacto .popup ion-icon{
     color: #00ff00;
     font-size: 50px;
     align-self: center;
 }
-.popup button{
+
+#seccion_contacto .popup button{
     width: 100%;
     background-color: #00ff00;
     padding: 10px 0;
@@ -112,16 +128,19 @@ textarea{
     cursor: pointer;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
 }
-.popup a{
+
+#seccion_contacto .popup a{
     color: #ff0000;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 2px;
 }
-.open-slide{
+
+#seccion_contacto .open-slide{
     display: flex;
     flex-direction: column;
     justify-content: center;
     visibility: visible;
     opacity: 1;
+    height: 500px;
 }
