@@ -1,0 +1,39 @@
+footer{
+    text-align: center;
+    background-color: rgb(131, 24, 24);
+    padding: 10px;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+}
+
+footer .fa:hover {
+    opacity: 0.9;
+}
+
+footer .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+footer .fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+footer .fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+footer .fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 80px;
+}
+
+footer h1 {
+    color: green;
+}

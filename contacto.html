@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/aed69dcdbf.js" crossorigin="anonymous"></script>
 
-
-</head>
-
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="css/form.css" rel="stylesheet">
+    </head>
     <body>
 
-<header>
-    <iframe src="header.html" style="width: 100%;"> </iframe>
-</header>
-        <div class="container">
-            <div class="form-box">
-                <form id="form-fill" action="http://formspree.io/ferbal2000@gmail.com" method="post" name="FormFill" onsubmit="return validation()">
-                    <h2>Contacto</h2>
-                    <p id="result"></p>
-                    <div class="input-box">
-                        <i class="bx bxs-user-circle" ></i>
-                        <input type="text" name="name" id="Name" placeholder="Nombre">
-                    </div>
-                    <div class="input-box">
-                        <i class="bx bxs-envelope" ></i>
-                        <input type="text" name="email" id="Email" placeholder="Email">
-                    </div>
-                    <div class="input-box">
-                        <i class="bx bxs-comment-detail" ></i>
-                        <textarea name="Textarea" id="" cols="30" rows="10" placeholder="Consulta..."></textarea>
-                    </div>
-                    <div class="button">
-                        <input class="btn" type="submit" value="Enviar" onclick="validation()">
-                    </div>
-                </form>
-            </div>
-            <div class="popup" id="popup">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <h2>Gracias!</h2>
-                <p>Tu consulta fue enviada.</p>
-                <a href="contacto.html"><button onclick="CloseSlide()">OK</button></a>
-            </div>
-        </div>
+        <header></header>
 
-        <script src="js/form.js"></script>
+        <main>
+            <div class="container">
+                <div class="form-box">
+                    <form id="form-fill" action="http://formspree.io/ferbal2000@gmail.com" method="post" name="FormFill" onsubmit="return validation()">
+                        <h2>Contacto</h2>
+                        <p id="result"></p>
+                        <div class="input-box">
+                            <i class="bx bxs-user-circle" ></i>
+                            <input type="text" name="name" id="Name" placeholder="Nombre">
+                        </div>
+                        <div class="input-box">
+                            <i class="bx bxs-envelope" ></i>
+                            <input type="text" name="email" id="Email" placeholder="Email">
+                        </div>
+                        <div class="input-box">
+                            <i class="bx bxs-comment-detail" ></i>
+                            <textarea name="Textarea" id="" cols="30" rows="10" placeholder="Consulta..."></textarea>
+                        </div>
+                        <div class="button">
+                            <input class="btn" type="submit" value="Enviar" onclick="validation()">
+                        </div>
+                    </form>
+                </div>
+                <div class="popup" id="popup">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <h2>Gracias!</h2>
+                    <p>Tu consulta fue enviada.</p>
+                    <a href="contacto.html"><button onclick="CloseSlide()">OK</button></a>
+                </div>
+            </div>
+        </main>
 
+        <footer></footer>
+
+        <script src="js/common.js" type="text/javascript"></script>
+        <script src="js/form.js" type="text/javascript"></script>
     </body>
 </html>

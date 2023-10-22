@@ -1,0 +1,39 @@
+header{
+
+    background-color: rgb(177, 31, 31);
+    width: 100%;
+}
+
+header .logo{
+    padding-top: 10px;
+}
+
+header h1{
+
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: rgb(199, 61, 61);
+}
