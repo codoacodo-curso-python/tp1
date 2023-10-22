@@ -1,18 +1,31 @@
 @import url("common.css");
 
+#seccion_peliculas h1{
+    color: #ff5700;
+}
+
+#seccion_peliculas main{
+    padding: 0 50px;
+}
+
+#seccion_peliculas main .container{
+    margin-top: 8px;
+}
+
 .movies{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 400px));
+    /* grid-auto-rows: minmax(0, 1fr); */
+    column-gap: 30px;
+    row-gap: 35px;
+    grid-auto-flow: dense;
+    justify-content: center;
 }
 
 .movies li {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    list-style: none;
-    margin: 10px;
+    position: relative;
     padding: 15px;
     border-radius: 12px;
     text-align: center;
@@ -20,13 +33,40 @@
 }
 
 .movies li img {
-    max-width: 300px;
     border-radius: 12px;
 }
 
 .movies li h2{
-    color: #fff;
-    font-size: 1.8em;
+    color: #C0C0C0;
+    font-size: 22px;
     padding: 15px 10px 0;
     margin-top: auto;
+}
+
+.movies li .badge {
+    color: #fff;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff5700;
+}
+
+.movies li .release-date {
+    color: #ff5700;
+}
+
+@media (max-width: 767px) {
+    .movies{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 375px) {
+    #seccion_peliculas h1{
+        text-align: center;
+    }
+    .movies{
+        grid-template-columns: 1fr;
+    }
 }

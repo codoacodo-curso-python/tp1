@@ -27,8 +27,10 @@ function connect(){
         list.map((item) => {
 
             const name = item.l
-            const poster = (typeof item.i === "undefined") ? '' : item.i.imageUrl
-            const movie = `<li><img src="${poster}" alt="Imagen de ${name}"><h2>${name}</h2></li>`
+            const badge = item.q
+            const year = (typeof item.yr === "undefined") ? 'sin fecha' : item.yr
+            const poster = (typeof item.i === "undefined") ? 'img/no-image.png' : item.i.imageUrl
+            const movie = `<li><span class="badge">${badge}</span><img src="${poster}" alt="Imagen de ${name}"><h2>${name}</h2><span class="release-date">(${year})</span></li>`
             document.querySelector('.movies').innerHTML += movie
         })
     })
