@@ -25,6 +25,7 @@ body{
 
 .main {
     grid-area: main;
+    min-height: 50vh;
 }
 
 .footer {
