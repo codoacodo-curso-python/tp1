@@ -28,6 +28,7 @@ body{
     grid-area: main;
     min-height: 50vh;
     justify-self: center;
+    width: 100%;
 }
 
 .footer {
@@ -36,7 +37,7 @@ body{
 
 @media (min-width: 992px) {
     .main {
-        width: 1280px;
+        max-width: 1280px;
 
     }
 }

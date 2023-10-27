@@ -15,29 +15,18 @@
     margin-top: 24px;
 }
 
+#seccion_index #recomendado,
+#seccion_index #estreno,
+#seccion_index #visto,
+#seccion_index #visto2{
+    width: 100%;
+}
+
+
 @media (max-width: 576px) {
 
     #seccion_index h2{
         text-align: center;
         margin-bottom: 8px;
     }
-
-    #seccion_index #recomendado,
-    #seccion_index #estreno,
-    #seccion_index #visto,
-    #seccion_index #visto2{
-        width: 370px;
-    }
-}
-
-
-@media (min-width: 992px) {
-
-    #seccion_index #recomendado,
-    #seccion_index #estreno,
-    #seccion_index #visto,
-    #seccion_index #visto2{
-        width: 100%;
-    }
-
 }

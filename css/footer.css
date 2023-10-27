@@ -57,7 +57,7 @@ footer .credits{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 1280px;
+        max-width: 1280px;
     }
 
     footer .navbar{
@@ -82,8 +82,14 @@ footer .credits{
 
 }
 
+@media (max-width: 1279px) {
+    footer .container{
+        padding: 0 48px;
+    }
+}
 
-@media (max-width: 576px) {
+
+@media (max-width: 991px) {
     footer .container{
         align-items: center;
         gap: 25px;

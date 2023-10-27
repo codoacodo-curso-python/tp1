@@ -81,11 +81,19 @@ header nav li a.active:after {
         /* display: flex;
         align-items: center;
         margin: 0 auto; */
-        width: 1280px;
+        max-width: 1280px;
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 992px) and (max-width: 1279px) {
+    header .header-top{
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+
+@media (max-width: 991px) {
     header .header-top{
         padding: 20px 10%;
     }

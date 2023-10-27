@@ -57,6 +57,13 @@
     color: #ff5700;
 }
 
+@media (max-width: 1279px) {
+    main {
+        padding: 0 16px;
+    }
+}
+
+
 @media (max-width: 992px) {
     .movies{
         grid-template-columns: repeat(2, 1fr);
@@ -68,9 +75,7 @@
     #seccion_peliculas h1{
         text-align: center;
     }
-    main {
-        padding: 0 16px;
-    }
+
     .movies{
         grid-template-columns: 1fr;
     }
