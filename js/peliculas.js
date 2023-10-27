@@ -24,8 +24,6 @@ function connect(){
     .then(data => {
         const list = data.d
 
-        console.log(list)
-
         list.map((item) => {
 
             const name = item.l
