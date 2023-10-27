@@ -10,7 +10,8 @@ footer .container{
 }
 
 footer .social {
-
+    flex: 1 1 33%;
+    text-align: center;
 }
 
 footer .social .fa {
@@ -40,7 +41,13 @@ footer .social .fa-reddit {
 }
 
 footer .navbar{
+    flex: 1 1 33%;
+    text-align: left;
+}
 
+footer .details{
+    flex: 1 1 33%;
+    text-align: right;
 }
 
 footer .copyright{
@@ -55,7 +62,6 @@ footer .credits{
 @media (min-width: 992px) {
     footer .container{
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         max-width: 1280px;
     }
