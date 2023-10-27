@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald&display=swap');
 
 @import url("reset.css");
 @import url("header.css");
@@ -7,7 +8,7 @@
 
 body{
     padding: 0;
-    background-color: #000;
+    background-color: rgba(0,0,0,.9);
     font-family: "Oswald", sans-serif;
     display: grid;
     justify-items: stretch;
@@ -26,8 +27,16 @@ body{
 .main {
     grid-area: main;
     min-height: 50vh;
+    justify-self: center;
 }
 
 .footer {
     grid-area: footer;
+}
+
+@media (min-width: 992px) {
+    .main {
+        width: 1280px;
+
+    }
 }

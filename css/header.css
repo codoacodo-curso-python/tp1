@@ -2,13 +2,31 @@ header{
     background-color: rgb(177, 31, 31);
 }
 
-header .logo{
-    padding-top: 10px;
+header .header-top{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-header h2{
-    text-align: center;
+header .logo{
+    padding: 0;
 }
+
+header .logo a{
+    display: block;
+}
+
+header .title{
+    margin: 0 auto;
+}
+
+.title h2 {
+    font-size: 56px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
 
 header nav {
 
@@ -55,4 +73,24 @@ header nav li a.active:after {
     display: block;
     opacity: 1;
     transition: opacity .4s;
+}
+
+
+@media (min-width: 992px) {
+    header .header-top{
+        /* display: flex;
+        align-items: center;
+        margin: 0 auto; */
+        width: 1280px;
+    }
+}
+
+@media (max-width: 576px) {
+    header .header-top{
+        padding: 20px 10%;
+    }
+
+    .title h2 {
+        font-size: 38px;
+    }
 }

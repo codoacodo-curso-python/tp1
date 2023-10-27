@@ -2,10 +2,11 @@
 
 #seccion_peliculas h1{
     color: #ff5700;
+    margin-left: 10px;
 }
 
 #seccion_peliculas main{
-    padding: 0 50px;
+
 }
 
 #seccion_peliculas main .container{

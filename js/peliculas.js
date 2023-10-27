@@ -5,7 +5,9 @@ $(function(){
 
 function connect(){
 
-    let search = 'https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr'
+    let search = 'https://imdb8.p.rapidapi.com/auto-complete?q=one'
+
+    // let search = 'https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr'
 
     let mostPopular = 'https://imdb8.p.rapidapi.com/title/get-most-popular-movies?homeCountry=US&purchaseCountry=US&currentCountry=US'
 

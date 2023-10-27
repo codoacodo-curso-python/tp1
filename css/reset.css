@@ -107,3 +107,8 @@ meter {
     all: revert;
     box-sizing: border-box;
 }
+
+.ff-lilita {
+    font-family: 'Lilita One', sans-serif;
+
+}
