@@ -23,7 +23,9 @@
     }
 
     #seccion_index #recomendado,
-    #seccion_index #estreno{
+    #seccion_index #estreno,
+    #seccion_index #visto,
+    #seccion_index #visto2{
         width: 370px;
     }
 }
