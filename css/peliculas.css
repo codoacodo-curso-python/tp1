@@ -64,8 +64,12 @@
 }
 
 @media (max-width: 576px) {
+
     #seccion_peliculas h1{
         text-align: center;
+    }
+    main {
+        padding: 0 16px;
     }
     .movies{
         grid-template-columns: 1fr;
