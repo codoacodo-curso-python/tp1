@@ -27,7 +27,7 @@
 
 .yt-container {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     margin-bottom: 24px;
     flex-wrap: wrap;
 }
