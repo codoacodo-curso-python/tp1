@@ -5,25 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas</title>
 
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/aed69dcdbf.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="css/index.css" rel="stylesheet">
-</head>
 
+</head>
 <body id="seccion_index">
-    <header class="header">
-    </header>
+    <header class="header"></header>
     <main class="main">
-        <h1>E S T R E N O S</h1>
-        <section class="yt-videos">
-            <iframe class="video-1" src="https://www.youtube.com/embed/uYPbbksJxIg?si=X5BrmH34x2nQg28_" title="Oppenheimer Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="video-2" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=ehnhYy5-l3ag-vGb" title="Barbie Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="video-3" src="https://www.youtube.com/embed/otNh9bTjXWg?si=FVnl7vKjoIKVMBt7" title="WONKA Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="recomendados">
+            <h2>Recomendación del día</h2>
+            <div class="container">
+                <div id="recomendado"></div>
+            </div>
         </section>
+
+        <section class="estrenos">
+            <h2>Estrenos</h2>
+            <div class="yt-container">
+                <iframe class="video-1" src="https://www.youtube.com/embed/uYPbbksJxIg?si=X5BrmH34x2nQg28_" title="Oppenheimer Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-2" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=ehnhYy5-l3ag-vGb" title="Barbie Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-3" src="https://www.youtube.com/embed/otNh9bTjXWg?si=FVnl7vKjoIKVMBt7" title="WONKA Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="container">
+                <div id="estreno"></div>
+            </div>
+        </section>
+
+        <section class="vistos">
+            <h2>Más vistos</h2>
+            <div class="container">
+                <div id="visto"></div>
+            </div>
+
+            <div class="container">
+                <div id="visto2"></div>
+            </div>
+        </section>
+
     </main>
     <footer class="footer"></footer>
     <script src="js/common.js"></script>
-    <!-- <script src="peliculas.js"></script> -->
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
