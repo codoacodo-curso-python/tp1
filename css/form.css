@@ -94,7 +94,7 @@
 
 #seccion_contacto .popup{
     color: #fff;
-    background-color: #000;
+    background-color: #191919;
     border-radius: 6px;
     height: 1px;
     width: 350px;
@@ -126,7 +126,7 @@
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1); */
 }
 
 #seccion_contacto .popup a{
